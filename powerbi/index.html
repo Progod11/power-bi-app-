@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Free Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+            
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents repetition */
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        button {
+            background-color: #555;
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .hidden-content {
+            display: none;
+        }
+
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background-color: #bdbdbd;
+            color: #fff;
+        }
+
+        body.dark-mode header {
+            background-color: #444;
+        }
+
+        body.dark-mode button {
+            background-color: #444;
+        }
+
+        button.right {
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Power BI Free Course</h1>
+        
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </header>
+    
+
+    <main>
+        <h2>Welcome to the Power BI Free Course</h2>
+        <p>This is a free course to help you learn and master Power BI.</p>
+        <p>Start your learning journey today!</p>
+        <p>Enroll Now For Free!!</p>
+
+        <button onclick="toggleContent()">Show More</button>
+
+        <div id="additional-content" class="hidden-content">
+            <h3>Contact </h3>
+            <p>Phone number: 7208265563</p>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023 Power BI Free Course
+    </footer>
+
+    <script>
+        function toggleContent() {
+            var additionalContent = document.getElementById("additional-content");
+            if (additionalContent.style.display === "none") {
+                additionalContent.style.display = "block";
+            } else {
+                additionalContent.style.display = "none";
+            }
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
